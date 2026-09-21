@@ -1,5 +1,4 @@
-// EXERCÍCIOS DE PRATICA PROFFISIONAL - LÓGICA DE PROGAMAÇÃO EM C
-// TESTE DE ATIVIDADE 1
+// EXERCÍCIO 1 ? Saudação
 
 #include <stdio.h>
 #include <locale.h>
