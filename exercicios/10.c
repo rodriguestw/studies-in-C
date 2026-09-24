@@ -1,4 +1,4 @@
-// EXERCÍCIO 10 ? Valor da compra
+// EXERCï¿½CIO 10 ? Valor da compra
 
 #include <stdio.h>
 #include <locale.h>
@@ -16,7 +16,7 @@ int main(){
         printf("\nQuantidade comprada: \n");
             scanf("%d", &quantidade);
 
-        printf("\nPreço: \n");
+        printf("\nPreï¿½o: \n");
             scanf("%f", &preco);
 
         valor = preco * quantidade;
