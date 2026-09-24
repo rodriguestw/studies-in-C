@@ -1,5 +1,5 @@
-// EXERCÍCIO 5 ? Área do retângulo
-// Área = Base × Altura
+// EXERCï¿½CIO 5 ? ï¿½rea do retï¿½ngulo
+// ï¿½rea = Base ï¿½ Altura
 
 #include <stdio.h>
 #include <locale.h>
@@ -9,14 +9,14 @@ int main(){
 
     int area, base, altura;
 
-    printf("\nBase:");
-    scanf("%d", &base);
+        printf("\nBase:");
+        scanf("%d", &base);
 
-    printf("Altura:");
-    scanf("%d", &altura);
+        printf("Altura:");
+        scanf("%d", &altura);
 
-    area = base * altura;
+        area = base * altura;
 
-    printf("\nArea = %d\n", area);
+        printf("\nArea = %d\n", area);
 
 }
