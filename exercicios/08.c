@@ -12,14 +12,14 @@ int main(){
 
     int horas, salario, valor;
 
-    printf("Quantidade de horas trabalhadas:\n");
-    scanf("%d", &horas );
+        printf("Quantidade de horas trabalhadas:\n");
+        scanf("%d", &horas );
 
-    printf("Valor recebido pro hora:\n");
-    scanf("%d", &valor);
+        printf("Valor recebido pro hora:\n");
+        scanf("%d", &valor);
 
-    salario = valor * horas;
+        salario = valor * horas;
 
-    printf("\nSalario bruto:\n%d\n", salario);
+        printf("\nSalario bruto:\n%d\n", salario);
 
 }
