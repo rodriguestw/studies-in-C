@@ -9,12 +9,12 @@ int main(){
 
     int c, f;
 
-    printf("\nDigite em graus celsius\n");
-    scanf("%d", &c);
+        printf("\nDigite em graus celsius\n");
+        scanf("%d", &c);
 
-    f = (c * 9 / 5) + 32;
+        f = (c * 9 / 5) + 32;
 
-    printf("\n%d Fahrenheit\n", f);
+        printf("\n%d Fahrenheit\n", f);
 
     return 0;
 
