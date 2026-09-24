@@ -1,4 +1,4 @@
-// EXERCÍCIO 1 ? Saudação
+// EXERCï¿½CIO 1 ? Saudaï¿½ï¿½o
 
 #include <stdio.h>
 #include <locale.h>
@@ -12,8 +12,8 @@ int main(void) {
         printf("Digite seu nome: ");
         scanf("%s", &nome);
 
-        printf("\nOlá %s! Seja bem-vindo(a) á disciplina de lógica de Programação.\n", nome);
+        printf("\nOlï¿½ %s! Seja bem-vindo(a) ï¿½ disciplina de lï¿½gica de Programaï¿½ï¿½o.\n", nome);
 
-        return 0;
+    return 0;
     
 }
