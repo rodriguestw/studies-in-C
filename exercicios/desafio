@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "Portuguese");
+
+    int opcao, quantidade, totalItens = 0;
+    float preco, subtotal, total = 0, pago, troco;
+
+    do {
+        printf("\n=== LANCHONETE ===\n");
+        printf("1. X-Burger      R$ 15.00\n");
+        printf("2. X-Salada      R$ 17.00\n");
+        printf("3. Refrigerante  R$  6.00\n");
+        printf("4. Batata frita  R$ 12.00\n");
+        printf("0. Finalizar pedido\n");
+        printf("Escolha: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 0) {
+            break;
+        }
+
+        switch (opcao) {
+            case 1: preco = 15.00; break;
+            case 2: preco = 17.00; break;
+            case 3: preco = 6.00;  break;
+            case 4: preco = 12.00; break;
+            default:
+                printf("Opcao invalida.\n");
+                continue;
+        }
+
+        printf("Quantidade: ");
+        scanf("%d", &quantidade);
+
+        if (quantidade <= 0) {
+            printf("Quantidade invalida.\n");
+            continue;
+        }
+
+        subtotal = preco * quantidade;
+        total += subtotal;
+        totalItens += quantidade;
+        printf("Subtotal do item: R$ %.2f | Total parcial: R$ %.2f\n", subtotal, total);
+
+    } while (1);
+
+    if (totalItens == 0) {
+        printf("Nenhum item no pedido.\n");
+        return 0;
+    }
+
+    printf("\n=== RESUMO DO PEDIDO ===\n");
+    printf("Itens: %d\n", totalItens);
+    printf("Total a pagar: R$ %.2f\n", total);
+
+    printf("Valor pago: R$ ");
+    scanf("%f", &pago);
+
+    while (pago < total) {
+        printf("Valor insuficiente. Faltam R$ %.2f\n", total - pago);
+        printf("Valor pago: R$ ");
+        scanf("%f", &pago);
+    }
+
+    troco = pago - total;
+    printf("Troco: R$ %.2f\n", troco);
+    printf("Obrigado e bom apetite!\n");
+}
